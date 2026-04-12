@@ -140,20 +140,19 @@ h1, h2, h3, h4 {
 }
 
 /* ============================================
-   NAVIGATION
+   NAVIGATION — navy, white text
    ============================================ */
 .navbar {
   position: fixed;
   top: 0; left: 0; right: 0;
   z-index: 1000;
-  background: rgba(255,255,255,0.97);
-  border-bottom: 1px solid var(--border);
-  backdrop-filter: blur(8px);
+  background: var(--navy);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
   transition: box-shadow var(--ease);
 }
 
 .navbar.scrolled {
-  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  box-shadow: 0 2px 20px rgba(0,0,0,0.3);
 }
 
 .nav-inner {
@@ -169,34 +168,13 @@ h1, h2, h3, h4 {
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 10px;
   text-decoration: none;
 }
 
 .nav-logo-img {
-  height: 40px;
+  height: 46px;
   width: auto;
   object-fit: contain;
-}
-
-.nav-logo-text {
-  display: flex;
-  flex-direction: column;
-  line-height: 1.2;
-}
-
-.nav-logo-name {
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: var(--text-head);
-  letter-spacing: -0.01em;
-}
-
-.nav-logo-tagline {
-  font-size: 0.65rem;
-  color: var(--text-light);
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
 }
 
 .nav-links {
@@ -209,7 +187,7 @@ h1, h2, h3, h4 {
 .nav-links a {
   display: block;
   padding: 7px 14px;
-  color: var(--text-body);
+  color: rgba(255,255,255,0.78);
   font-size: 0.88rem;
   font-weight: 500;
   border-radius: 6px;
@@ -218,23 +196,23 @@ h1, h2, h3, h4 {
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--text-head);
-  background: var(--bg);
+  color: var(--white);
+  background: rgba(255,255,255,0.08);
 }
 
 .nav-cta {
   padding: 9px 20px !important;
-  background: var(--navy) !important;
-  color: var(--white) !important;
+  background: var(--gold) !important;
+  color: var(--navy) !important;
   border-radius: 8px !important;
-  font-weight: 600 !important;
-  margin-left: 6px;
+  font-weight: 700 !important;
+  margin-left: 8px;
 }
 .nav-cta:hover {
-  background: var(--navy-mid) !important;
-  color: var(--white) !important;
+  background: var(--gold-light) !important;
+  color: var(--navy) !important;
   transform: translateY(-1px);
-  box-shadow: 0 4px 12px rgba(13,31,60,0.18);
+  box-shadow: 0 4px 12px rgba(184,145,47,0.35);
 }
 
 .nav-toggle {
@@ -250,17 +228,17 @@ h1, h2, h3, h4 {
   display: block;
   width: 22px;
   height: 1.5px;
-  background: var(--text-head);
+  background: var(--white);
   border-radius: 2px;
   transition: transform var(--ease), opacity var(--ease);
 }
 
 /* ============================================
-   HERO
+   HERO — full-bleed photo background
    ============================================ */
 .hero {
   min-height: 100vh;
-  background: var(--navy);
+  background: var(--navy) center top / cover no-repeat;
   display: flex;
   align-items: center;
   padding-top: 68px;
@@ -268,13 +246,18 @@ h1, h2, h3, h4 {
   overflow: hidden;
 }
 
-/* Subtle texture — single low-opacity diagonal */
-.hero::after {
+/* Dark gradient overlay so text stays readable */
+.hero::before {
   content: '';
   position: absolute;
   inset: 0;
-  background: linear-gradient(160deg, rgba(255,255,255,0.03) 0%, transparent 60%);
-  pointer-events: none;
+  background: linear-gradient(
+    100deg,
+    rgba(13,31,60,0.92) 0%,
+    rgba(13,31,60,0.75) 55%,
+    rgba(13,31,60,0.35) 100%
+  );
+  z-index: 0;
 }
 
 .hero-inner {
@@ -282,11 +265,28 @@ h1, h2, h3, h4 {
   z-index: 1;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 96px 28px;
+  padding: 112px 28px 96px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 72px;
+  grid-template-columns: 1fr;
+  max-width: 660px;
+  margin-left: 0;
+  padding-left: 28px;
+  /* left-align within a full-width container */
+  width: 100%;
+}
+
+/* wrapper keeps hero-inner left-anchored within max-width */
+.hero-container {
+  width: 100%;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 28px;
+  position: relative;
+  z-index: 1;
+  display: flex;
   align-items: center;
+  min-height: 100vh;
+  padding-top: 68px;
 }
 
 .hero-label {
@@ -983,11 +983,11 @@ footer {
     flex-direction: column;
     position: absolute;
     top: 68px; left: 0; right: 0;
-    background: var(--white);
+    background: var(--navy);
     padding: 16px;
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid rgba(255,255,255,0.1);
     gap: 2px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
   }
   .nav-links.open { display: flex; }
   .nav-toggle      { display: flex; }
