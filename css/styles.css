@@ -168,13 +168,39 @@ h1, h2, h3, h4 {
 .nav-logo {
   display: flex;
   align-items: center;
+  gap: 12px;
   text-decoration: none;
 }
 
 .nav-logo-img {
-  height: 46px;
+  height: 50px;
   width: auto;
   object-fit: contain;
+  flex-shrink: 0;
+}
+
+.nav-logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
+.nav-logo-name {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--white);
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+}
+
+.nav-logo-sub {
+  font-size: 0.62rem;
+  font-weight: 600;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-top: 2px;
 }
 
 .nav-links {
@@ -997,4 +1023,10 @@ footer {
   .section         { padding: 60px 0; }
   .contact-form-wrap { padding: 28px; }
   .hero-desc       { margin: 0 auto 32px; }
+  .nav-logo-name   { font-size: 0.95rem; }
+  .nav-logo-sub    { display: none; }
+}
+
+@media (max-width: 400px) {
+  .nav-logo-name   { display: none; }
 }
