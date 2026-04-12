@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Schedule a Call | Alexander Insurance Group</title>
+  <meta name="description" content="Book a free review with Roland Alexander. Pick a time that works for you and let's look at where you stand today." />
+  <link rel="stylesheet" href="css/styles.css" />
+  <!-- Calendly widget CSS -->
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="Alexander Insurance Group home">
+        <div class="nav-logo-placeholder" aria-hidden="true">AIG</div>
+        <div class="nav-logo-text">
+          <span class="nav-logo-name">Alexander Insurance Group</span>
+          <span class="nav-logo-tagline">Protection &bull; Planning &bull; Purpose</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="schedule.html" class="nav-cta">Schedule a Call</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== PAGE HERO ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <span class="section-label">Book a Time</span>
+      <h1>Schedule a Free Review</h1>
+      <p>Pick a time that works for you. We take a look at where you are today and what, if anything, needs to change.</p>
+    </div>
+  </section>
+
+  <!-- ===== WHAT TO EXPECT ===== -->
+  <section class="section section-alt">
+    <div class="container text-center">
+      <span class="section-label">What to Expect</span>
+      <h2 class="section-title">A Conversation, Not a Sales Pitch</h2>
+      <div class="divider divider-center"></div>
+    </div>
+    <div class="container">
+      <div class="cards-grid" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-top:32px;">
+
+        <div class="card text-center">
+          <div class="card-icon" style="margin:0 auto 16px;">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z" /></svg>
+          </div>
+          <h3 style="font-size:1rem;">We Listen</h3>
+          <p style="font-size:0.88rem;">We start by understanding your situation, your family, and your goals.</p>
+        </div>
+
+        <div class="card text-center">
+          <div class="card-icon" style="margin:0 auto 16px;">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-6 9l2 2 4-4" /></svg>
+          </div>
+          <h3 style="font-size:1rem;">We Review</h3>
+          <p style="font-size:0.88rem;">We look at what you currently have — coverage, gaps, and opportunities.</p>
+        </div>
+
+        <div class="card text-center">
+          <div class="card-icon" style="margin:0 auto 16px;">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+          </div>
+          <h3 style="font-size:1rem;">We're Honest</h3>
+          <p style="font-size:0.88rem;">If nothing needs to change, I will tell you. No pressure, no fluff.</p>
+        </div>
+
+        <div class="card text-center">
+          <div class="card-icon" style="margin:0 auto 16px;">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+          </div>
+          <h3 style="font-size:1rem;">You Decide</h3>
+          <p style="font-size:0.88rem;">If improvements make sense, I show you exactly what to do next. You're in control.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CALENDLY EMBED ===== -->
+  <section class="calendly-section" aria-labelledby="calendly-heading">
+    <div class="container text-center" style="margin-bottom:32px;">
+      <span class="section-label">Pick Your Time</span>
+      <h2 class="section-title" id="calendly-heading">Choose a Time That Works For You</h2>
+      <div class="divider divider-center"></div>
+      <p style="color:var(--mid-gray);max-width:500px;margin:0 auto;">
+        All times are shown in your local timezone. Sessions are typically 20–30 minutes.
+      </p>
+    </div>
+
+    <div class="container">
+      <!--
+        ============================================================
+        CALENDLY INLINE WIDGET
+        ============================================================
+        To activate:
+        1. Log in to your Calendly account at calendly.com
+        2. Go to your Event Types and copy your scheduling link
+           (looks like: https://calendly.com/YOUR-USERNAME/event-type)
+        3. Replace YOUR-CALENDLY-URL below with your actual link
+        4. Uncomment the widget div and script, remove the placeholder
+        ============================================================
+
+        <div
+          class="calendly-inline-widget"
+          data-url="https://calendly.com/YOUR-USERNAME/free-review?hide_gdpr_banner=1&primary_color=c9a84c"
+          style="min-width:320px;height:700px;">
+        </div>
+        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+      -->
+
+      <!-- PLACEHOLDER — remove once Calendly URL is added above -->
+      <div class="calendly-embed-wrap" style="display:flex;align-items:center;justify-content:center;flex-direction:column;gap:20px;">
+        <svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" fill="none" viewBox="0 0 24 24" stroke="var(--gold)" stroke-width="1.5"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+        <div style="text-align:center;">
+          <p style="font-family:var(--font-heading);font-size:1.2rem;color:var(--navy);margin-bottom:8px;">Calendly Calendar Coming Soon</p>
+          <p style="color:var(--mid-gray);font-size:0.9rem;max-width:380px;">
+            Add your Calendly scheduling link to <code>schedule.html</code> to activate the booking calendar.
+          </p>
+        </div>
+        <p style="font-size:0.85rem;color:var(--mid-gray);">
+          In the meantime, call us at <a href="tel:7704565822" style="color:var(--gold);font-weight:600;">770-456-5822</a>
+          or <a href="contact.html" style="color:var(--gold);font-weight:600;">send a message</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ALTERNATE CONTACT ===== -->
+  <section class="section section-alt">
+    <div class="container text-center">
+      <span class="section-label">Other Ways to Reach Us</span>
+      <h2 class="section-title">Prefer to Reach Out Directly?</h2>
+      <div class="divider divider-center"></div>
+      <div style="display:flex;justify-content:center;gap:40px;flex-wrap:wrap;margin-top:8px;">
+        <div class="contact-block" style="flex-direction:column;align-items:center;text-align:center;max-width:200px;">
+          <div class="contact-block-icon" style="margin-bottom:12px;">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+          </div>
+          <strong style="color:var(--navy);display:block;margin-bottom:4px;">Call</strong>
+          <a href="tel:7704565822" style="color:var(--text-body);">770-456-5822</a>
+        </div>
+        <div class="contact-block" style="flex-direction:column;align-items:center;text-align:center;max-width:200px;">
+          <div class="contact-block-icon" style="margin-bottom:12px;">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+          </div>
+          <strong style="color:var(--navy);display:block;margin-bottom:4px;">Email</strong>
+          <a href="mailto:alexanderinsurancegroup@comcast.net" style="color:var(--text-body);font-size:0.85rem;">alexanderinsurancegroup<br>@comcast.net</a>
+        </div>
+        <div class="contact-block" style="flex-direction:column;align-items:center;text-align:center;max-width:200px;">
+          <div class="contact-block-icon" style="margin-bottom:12px;">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+          </div>
+          <strong style="color:var(--navy);display:block;margin-bottom:4px;">Visit</strong>
+          <span style="color:var(--text-body);font-size:0.9rem;">6653 East Church St.<br>Douglasville, GA 30134</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <div class="nav-logo-placeholder" style="width:56px;height:56px;font-size:1.15rem;">AIG</div>
+        <p class="footer-brand-name">Alexander Insurance Group LLC</p>
+        <p class="footer-tagline">Protection. Planning. Purpose.<br>Serving individuals, families, and business owners.</p>
+      </div>
+      <div>
+        <p class="footer-heading">Navigation</p>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Roland</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="schedule.html">Schedule a Call</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="footer-heading">Contact</p>
+        <div class="footer-contact-line">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+          <span>6653 East Church St., Douglasville, GA 30134</span>
+        </div>
+        <div class="footer-contact-line">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+          <a href="tel:7704565822">770-456-5822</a>
+        </div>
+        <div class="footer-contact-line">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+          <a href="mailto:alexanderinsurancegroup@comcast.net">alexanderinsurancegroup@comcast.net</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-legal container">
+      <strong>DISCLAIMER:</strong> Your insurance policy, and not the information contained on this website, forms the contract between you and your insurance company. The policy contains limits, exclusions and limitations that are not detailed on this website. If there is a discrepancy between information contained herein and your policy, your policy takes precedence. There is no intentionally misleading information contained in this website; however, the Alexander Insurance Group takes no responsibility for errors.<br><br>
+      <strong>PRIVACY STATEMENT:</strong> The Alexander Insurance Group does not sell, trade or rent your personal information to outside companies. Any information you provide is held strictly confidential and is used only for the handling of your business with and through the Alexander Insurance Group.
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner container">
+        <span>&copy; <span id="year"></span> Alexander Insurance Group LLC. All rights reserved.</span>
+        <span>Douglasville, GA &mdash; Licensed Insurance Professional</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
