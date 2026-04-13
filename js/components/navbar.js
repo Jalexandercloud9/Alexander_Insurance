@@ -19,10 +19,7 @@ const Navbar = (function () {
         <div class="nav-inner">
           <a href="#home" class="nav-logo" aria-label="Alexander Insurance Group — Home">
             <img src="${brand.logo}" alt="Alexander Insurance Group" class="nav-logo-img">
-            <div class="nav-logo-text">
-              <span class="nav-logo-name">Alexander Insurance</span>
-              <span class="nav-logo-sub">Group</span>
-            </div>
+            <span class="nav-logo-name">Alexander Insurance Group</span>
           </a>
 
           <ul class="nav-links">
