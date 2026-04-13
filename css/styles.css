@@ -4,10 +4,11 @@
    ============================================ */
 
 :root {
-  --navy:       #0d1f3c;
-  --navy-mid:   #162840;
-  --gold:       #b8912f;
-  --gold-light: #d4a943;
+  --navy:       #1B3A6B;
+  --navy-mid:   #15305a;
+  --navy-dark:  #0d1f3c;
+  --gold:       #C9A84C;
+  --gold-light: #d4b85e;
   --white:      #ffffff;
   --bg:         #f7f7f7;
   --bg-subtle:  #f0efed;
@@ -15,7 +16,8 @@
   --text-head:  #222222;
   --text-body:  #484848;
   --text-light: #717171;
-  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+  --font-heading: 'Playfair Display', Georgia, 'Times New Roman', serif;
+  --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
           'Helvetica Neue', Arial, sans-serif;
   --max-width: 1080px;
   --r:    12px;
@@ -41,7 +43,7 @@ a   { color: var(--gold); text-decoration: none; transition: color var(--ease); 
 a:hover { color: var(--gold-light); }
 
 h1, h2, h3, h4 {
-  font-family: var(--font);
+  font-family: var(--font-heading);
   color: var(--text-head);
   line-height: 1.2;
   font-weight: 700;
@@ -186,7 +188,7 @@ h1, h2, h3, h4 {
 }
 
 .nav-logo-name {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: var(--font-heading);
   font-size: 1.15rem;
   font-weight: 700;
   color: var(--white);
@@ -279,9 +281,9 @@ h1, h2, h3, h4 {
   inset: 0;
   background: linear-gradient(
     100deg,
-    rgba(13,31,60,0.92) 0%,
-    rgba(13,31,60,0.75) 55%,
-    rgba(13,31,60,0.35) 100%
+    rgba(27,58,107,0.92) 0%,
+    rgba(27,58,107,0.78) 55%,
+    rgba(27,58,107,0.45) 100%
   );
   z-index: 0;
 }
@@ -985,6 +987,44 @@ footer {
   line-height: 1.75;
   max-width: var(--max-width);
   margin: 0 auto;
+}
+
+/* ============================================
+   MISSION / GOLD ACCENT SECTION
+   ============================================ */
+.mission-section {
+  background: linear-gradient(135deg, var(--navy) 0%, var(--navy-dark) 100%);
+  padding: 88px 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.mission-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 120px;
+  height: 3px;
+  background: var(--gold);
+}
+
+.mission-section .section-label { color: var(--gold); }
+
+.mission-section .section-title {
+  color: var(--white);
+  max-width: 700px;
+  margin: 0 auto 24px;
+}
+
+.mission-section p {
+  color: rgba(255,255,255,0.7);
+  max-width: 620px;
+  margin: 0 auto;
+  font-size: 1.1rem;
+  line-height: 1.8;
 }
 
 /* ============================================
