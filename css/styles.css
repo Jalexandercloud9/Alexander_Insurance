@@ -170,15 +170,16 @@ h1, h2, h3, h4 {
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 4px;
+  gap: 0;
   text-decoration: none;
 }
 
 .nav-logo-img {
-  height: 34px;
+  height: 80px;
   width: auto;
   object-fit: contain;
   flex-shrink: 0;
+  margin: 0;
 }
 
 .nav-logo-text {
