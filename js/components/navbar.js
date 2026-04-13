@@ -21,7 +21,7 @@ const Navbar = (function () {
             <img src="${brand.logo}" alt="Alexander Insurance Group" class="nav-logo-img">
             <div class="nav-logo-text">
               <span class="nav-logo-name">Alexander Insurance Group</span>
-              <span class="nav-logo-sub">By Roland Alexander</span>
+              <span class="nav-logo-sub">Founded by Roland Alexander</span>
             </div>
           </a>
 
