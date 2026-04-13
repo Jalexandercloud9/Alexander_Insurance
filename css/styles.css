@@ -170,24 +170,39 @@ h1, h2, h3, h4 {
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 3px;
+  gap: 8px;
   text-decoration: none;
 }
 
 .nav-logo-img {
-  height: 42px;
+  height: 44px;
   width: auto;
   object-fit: contain;
   flex-shrink: 0;
 }
 
+.nav-logo-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.15;
+}
+
 .nav-logo-name {
   font-family: var(--font-heading);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: var(--white);
   letter-spacing: -0.01em;
   white-space: nowrap;
+}
+
+.nav-logo-sub {
+  font-size: 0.65rem;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-top: 1px;
 }
 
 .nav-links {
@@ -1104,9 +1119,9 @@ footer {
   .contact-form-wrap { padding: 28px; }
   .hero-desc       { margin: 0 auto 32px; }
   .nav-logo-name   { font-size: 0.95rem; }
-  .nav-logo-sub    { display: none; }
 }
 
 @media (max-width: 400px) {
   .nav-logo-name   { font-size: 0.8rem; }
+  .nav-logo-sub    { font-size: 0.55rem; letter-spacing: 0.12em; }
 }
