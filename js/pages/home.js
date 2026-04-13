@@ -47,10 +47,6 @@ function HomePage() {
           </div>
         </div>
       </div>
-      <div class="hero-scroll-indicator">
-        <span>Scroll</span>
-        <i class="bi bi-chevron-down"></i>
-      </div>
     </section>
 
     <!-- TRUST STRIP -->
