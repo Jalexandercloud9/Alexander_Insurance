@@ -11,9 +11,9 @@ const SiteData = {
     profilePhoto: 'ProfilePhoto.png',
     heroImage: 'Happy_Family.png',
     video: 'Commercial.MOV',
-    calendlyUrl: 'https://calendly.com/alexander-insurance/free-review',
-    phone: '(555) 312-4200',
-    email: 'roland@alexanderinsurancegroup.net',
+    calendlyUrl: 'https://calendly.com/alexanderinsurancegroup/my-self-event',
+    phone: '(770) 456-5822',
+    email: 'alexanderinsurancegroup@comcast.net',
     address: 'Serving clients nationwide',
   },
 
