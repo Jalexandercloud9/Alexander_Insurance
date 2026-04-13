@@ -265,8 +265,8 @@ h1, h2, h3, h4 {
    HERO — full-bleed photo background
    ============================================ */
 .hero {
-  min-height: 100vh;
-  background: var(--navy) center top / cover no-repeat;
+  min-height: 70vh;
+  background: var(--navy) center center / cover no-repeat;
   display: flex;
   align-items: center;
   padding-top: 68px;
@@ -293,7 +293,7 @@ h1, h2, h3, h4 {
   z-index: 1;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 112px 28px 96px;
+  padding: 72px 28px 64px;
   display: grid;
   grid-template-columns: 1fr;
   max-width: 660px;
@@ -313,8 +313,36 @@ h1, h2, h3, h4 {
   z-index: 1;
   display: flex;
   align-items: center;
-  min-height: 100vh;
+  min-height: 70vh;
   padding-top: 68px;
+}
+
+/* Scroll indicator */
+.hero-scroll-indicator {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  color: rgba(255,255,255,0.5);
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  animation: hero-bounce 2s ease infinite;
+}
+
+.hero-scroll-indicator i {
+  font-size: 1.2rem;
+}
+
+@keyframes hero-bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(8px); }
 }
 
 .hero-label {
