@@ -673,7 +673,7 @@ h1, h2, h3, h4 {
    ============================================ */
 .cta-band {
   background: var(--navy);
-  padding: 88px 0;
+  padding: 48px 0;
   text-align: center;
 }
 
@@ -685,7 +685,7 @@ h1, h2, h3, h4 {
 
 .cta-band p {
   color: rgba(255,255,255,0.6);
-  margin-bottom: 36px;
+  margin-bottom: 24px;
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
@@ -963,23 +963,23 @@ h1, h2, h3, h4 {
 footer {
   background: var(--navy);
   color: rgba(255,255,255,0.65);
-  padding: 64px 0 0;
+  padding: 28px 0 0;
 }
 
 .footer-grid {
   display: grid;
   grid-template-columns: 1.6fr 1fr 1fr;
-  gap: 48px;
+  gap: 28px;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 0 28px 56px;
+  padding: 0 28px 24px;
 }
 
 .footer-brand-name {
   font-size: 0.95rem;
   font-weight: 600;
   color: var(--white);
-  margin: 14px 0 8px;
+  margin: 8px 0 4px;
   letter-spacing: -0.01em;
 }
 
@@ -995,11 +995,11 @@ footer {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   color: rgba(255,255,255,0.35);
-  margin-bottom: 16px;
+  margin-bottom: 10px;
 }
 
 .footer-links { list-style: none; }
-.footer-links li { margin-bottom: 10px; }
+.footer-links li { margin-bottom: 6px; }
 .footer-links a {
   color: rgba(255,255,255,0.6);
   font-size: 0.88rem;
@@ -1011,7 +1011,7 @@ footer {
   display: flex;
   align-items: flex-start;
   gap: 10px;
-  margin-bottom: 12px;
+  margin-bottom: 8px;
   font-size: 0.88rem;
   line-height: 1.5;
 }
@@ -1021,7 +1021,7 @@ footer {
 
 .footer-bottom {
   border-top: 1px solid rgba(255,255,255,0.07);
-  padding: 20px 28px;
+  padding: 14px 28px;
   max-width: var(--max-width);
   margin: 0 auto;
   font-size: 0.76rem;
@@ -1037,7 +1037,7 @@ footer {
 
 .footer-legal {
   border-top: 1px solid rgba(255,255,255,0.06);
-  padding: 24px 28px;
+  padding: 14px 28px;
   font-size: 0.71rem;
   color: rgba(255,255,255,0.25);
   line-height: 1.75;
