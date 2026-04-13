@@ -19,16 +19,13 @@ function HomePage() {
     </div>
   `).join('');
 
-  // Service cards
+  // Service list rows
   const cardsHTML = services.map(s => `
-    <div class="card">
-      <div class="card-icon">
-        <i class="${s.icon}"></i>
-      </div>
-      <h3>${s.title}</h3>
-      <p>${s.shortDesc}</p>
-      <a href="#services" class="card-link">Learn more <i class="bi bi-arrow-right"></i></a>
-    </div>
+    <a href="#services" class="service-row">
+      <div class="service-row-icon"><i class="${s.icon}"></i></div>
+      <span class="service-row-title">${s.title}</span>
+      <i class="bi bi-arrow-right service-row-arrow"></i>
+    </a>
   `).join('');
 
   // Contact form options
@@ -69,7 +66,7 @@ function HomePage() {
         <span class="section-label">What We Offer</span>
         <h2 class="section-title">Insurance & Financial Solutions</h2>
         <p class="section-subtitle">From life insurance and wealth building to home, auto, and commercial coverage — we protect what matters most.</p>
-        <div class="cards-grid">
+        <div class="service-list">
           ${cardsHTML}
         </div>
       </div>

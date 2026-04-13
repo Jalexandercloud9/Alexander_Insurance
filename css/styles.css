@@ -449,6 +449,67 @@ h1, h2, h3, h4 {
 .trust-item svg { width: 18px; height: 18px; flex-shrink: 0; color: var(--gold); }
 
 /* ============================================
+   SERVICE LIST (home page)
+   ============================================ */
+.service-list {
+  max-width: 600px;
+  margin: 40px auto 0;
+}
+
+.service-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border);
+  text-decoration: none;
+  transition: gap var(--ease);
+}
+
+.service-row:first-child {
+  border-top: 1px solid var(--border);
+}
+
+.service-row:hover {
+  gap: 20px;
+}
+
+.service-row-icon {
+  width: 40px;
+  height: 40px;
+  background: var(--bg);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.service-row-icon i {
+  font-size: 1.1rem;
+  color: var(--gold);
+}
+
+.service-row-title {
+  flex: 1;
+  font-family: var(--font);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-head);
+}
+
+.service-row-arrow {
+  color: var(--text-light);
+  font-size: 0.85rem;
+  transition: color var(--ease), transform var(--ease);
+}
+
+.service-row:hover .service-row-arrow {
+  color: var(--gold);
+  transform: translateX(3px);
+}
+
+/* ============================================
    CARDS
    ============================================ */
 .cards-grid {
