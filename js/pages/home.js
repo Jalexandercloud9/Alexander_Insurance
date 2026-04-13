@@ -38,7 +38,6 @@ function HomePage() {
     <section class="hero" style="background-image: url('${brand.heroImage}');">
       <div class="hero-container">
         <div class="hero-inner">
-          <span class="hero-label">${hero.label}</span>
           <h1 class="hero-title">${hero.title}</h1>
           <p class="hero-desc">${hero.description}</p>
           <div class="hero-actions">
