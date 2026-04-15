@@ -170,16 +170,15 @@ h1, h2, h3, h4 {
 .nav-logo {
   display: flex;
   align-items: center;
-  gap: 0;
+  gap: 8px;
   text-decoration: none;
 }
 
 .nav-logo-img {
-  height: 80px;
+  height: 44px;
   width: auto;
   object-fit: contain;
   flex-shrink: 0;
-  margin: 0;
 }
 
 .nav-logo-text {
@@ -190,11 +189,12 @@ h1, h2, h3, h4 {
 
 .nav-logo-name {
   font-family: var(--font-heading);
-  font-size: 1.2rem;
+  font-size: 1.15rem;
   font-weight: 700;
   color: var(--white);
   letter-spacing: -0.01em;
   white-space: nowrap;
+  line-height: 1;
 }
 
 .nav-logo-sub {
