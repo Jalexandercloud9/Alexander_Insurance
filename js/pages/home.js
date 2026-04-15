@@ -10,6 +10,15 @@ function HomePage() {
   const mission = SiteData.mission;
   const about = SiteData.aboutPreview;
   const contactForm = SiteData.contactForm;
+  const hours = SiteData.businessHours;
+
+  // Business hours rows
+  const hoursHTML = hours.map(h => `
+    <div class="hours-row">
+      <span class="hours-day">${h.day}</span>
+      <span class="hours-time">${h.hours}</span>
+    </div>
+  `).join('');
 
   // Trust strip
   const trustHTML = trust.map(item => `
@@ -83,7 +92,7 @@ function HomePage() {
         <h2 class="section-title">See How IUL Can Change Your Future</h2>
         <p class="section-subtitle">Learn how Indexed Universal Life insurance builds tax-free wealth while protecting your family.</p>
         <div class="video-wrapper">
-          <video autoplay muted loop playsinline>
+          <video muted loop playsinline preload="metadata">
             <source src="${brand.video}" type="video/mp4">
             Your browser does not support the video tag.
           </video>
@@ -121,6 +130,16 @@ function HomePage() {
               <div class="contact-block-text">
                 <strong>Location</strong>
                 <span>${brand.address}</span>
+              </div>
+            </div>
+
+            <div class="contact-block">
+              <div class="contact-block-icon"><i class="bi bi-clock"></i></div>
+              <div class="contact-block-text">
+                <strong>Hours</strong>
+                <div class="hours-list">
+                  ${hoursHTML}
+                </div>
               </div>
             </div>
           </div>

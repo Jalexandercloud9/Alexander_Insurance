@@ -6,9 +6,7 @@ const App = (function () {
   const routes = {
     '#home': HomePage,
     '#services': ServicesPage,
-    '#about': AboutPage,
     '#schedule': SchedulePage,
-    '#contact': ContactPage,
   };
 
   function navigate(hash) {
@@ -54,10 +52,25 @@ const App = (function () {
       }
     }
 
-    // Video autoplay
+    // Video: only play when visible on screen
     const video = document.querySelector('.video-wrapper video');
     if (video) {
-      video.play().catch(() => {});
+      video.pause();
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              video.play().catch(() => {});
+            } else {
+              video.pause();
+            }
+          });
+        }, { threshold: 0.35 });
+        observer.observe(video);
+      } else {
+        // Fallback: play immediately
+        video.play().catch(() => {});
+      }
     }
   }
 

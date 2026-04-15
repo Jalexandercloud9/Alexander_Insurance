@@ -893,6 +893,24 @@ h1, h2, h3, h4 {
 .contact-block-text a { color: var(--text-body); font-size: 0.95rem; }
 .contact-block-text a:hover { color: var(--gold); }
 
+.hours-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  margin-top: 2px;
+}
+
+.hours-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  font-size: 0.9rem;
+  color: var(--text-body);
+}
+
+.hours-day { font-weight: 500; }
+.hours-time { color: var(--text-light); }
+
 .contact-form-wrap {
   background: var(--white);
   border: 1px solid var(--border);

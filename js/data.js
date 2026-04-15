@@ -20,8 +20,13 @@ const SiteData = {
   nav: [
     { label: 'Home', hash: '#home' },
     { label: 'Services', hash: '#services' },
-    { label: 'About', hash: '#about' },
     { label: 'Schedule', hash: '#schedule', cta: true },
+  ],
+
+  businessHours: [
+    { day: 'Monday – Friday', hours: '9:00 AM – 6:00 PM' },
+    { day: 'Saturday', hours: '10:00 AM – 2:00 PM' },
+    { day: 'Sunday', hours: 'Closed' },
   ],
 
   hero: {
@@ -168,8 +173,6 @@ const SiteData = {
     quickLinks: [
       { label: 'Home', hash: '#home' },
       { label: 'Services', hash: '#services' },
-      { label: 'About', hash: '#about' },
-      { label: 'Contact', hash: '#contact' },
       { label: 'Schedule a Call', hash: '#schedule' },
     ],
     legal: 'Alexander Insurance Group is a licensed insurance agency. Insurance products are offered through licensed carriers. Coverage availability and rates may vary by state. This website is for informational purposes only and does not constitute financial or legal advice.',
