@@ -17,11 +17,8 @@ const Navbar = (function () {
     document.getElementById('navbar').innerHTML = `
       <nav class="navbar" role="navigation" aria-label="Main navigation">
         <div class="nav-inner">
-          <a href="#home" class="nav-logo" aria-label="Alexander Insurance Group — Home">
+          <a href="#home" class="nav-logo" aria-label="Alexander Insurance Group LLC — Home">
             <img src="${brand.logo}" alt="Alexander Insurance Group LLC" class="nav-logo-img">
-            <div class="nav-logo-text">
-              <span class="nav-logo-name">Alexander Insurance Group LLC</span>
-            </div>
           </a>
 
           <ul class="nav-links">

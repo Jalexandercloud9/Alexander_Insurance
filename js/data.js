@@ -7,7 +7,7 @@ const SiteData = {
     name: 'Alexander Insurance Group LLC',
     agent: 'Roland Alexander',
     tagline: 'Security Today. Legacy Tomorrow.',
-    logo: 'Whitelogo 1.png',
+    logo: 'OrgLogo.png',
     profilePhoto: 'ProfilePhoto.png',
     heroImage: 'Happy_Family.png',
     video: 'Commercial.MOV',
