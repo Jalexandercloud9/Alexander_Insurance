@@ -118,6 +118,14 @@ function HomePage() {
             </div>
 
             <div class="contact-block">
+              <div class="contact-block-icon"><i class="bi bi-printer"></i></div>
+              <div class="contact-block-text">
+                <strong>Fax</strong>
+                <span>${brand.fax}</span>
+              </div>
+            </div>
+
+            <div class="contact-block">
               <div class="contact-block-icon"><i class="bi bi-envelope"></i></div>
               <div class="contact-block-text">
                 <strong>Email</strong>

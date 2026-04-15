@@ -36,6 +36,10 @@ const Footer = (function () {
               <a href="tel:${brand.phone}">${brand.phone}</a>
             </div>
             <div class="footer-contact-line">
+              <i class="bi bi-printer"></i>
+              <span>${brand.fax}</span>
+            </div>
+            <div class="footer-contact-line">
               <i class="bi bi-envelope"></i>
               <a href="mailto:${brand.email}">${brand.email}</a>
             </div>
