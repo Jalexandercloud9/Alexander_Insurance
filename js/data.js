@@ -14,7 +14,7 @@ const SiteData = {
     calendlyUrl: 'https://calendly.com/alexanderinsurancegroup/my-self-event',
     phone: '(770) 456-5822',
     email: 'alexanderinsurancegroup@comcast.net',
-    address: 'Serving clients nationwide',
+    address: '6653 East Church St., Douglasville, GA 30134',
   },
 
   nav: [
