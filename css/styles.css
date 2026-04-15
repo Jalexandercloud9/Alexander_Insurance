@@ -975,12 +975,27 @@ footer {
   padding: 0 28px 24px;
 }
 
+.footer-brand-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.footer-brand-logo {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
 .footer-brand-name {
-  font-size: 0.95rem;
-  font-weight: 600;
+  font-family: var(--font-heading);
+  font-size: 1rem;
+  font-weight: 700;
   color: var(--white);
-  margin: 8px 0 4px;
   letter-spacing: -0.01em;
+  white-space: nowrap;
 }
 
 .footer-tagline {

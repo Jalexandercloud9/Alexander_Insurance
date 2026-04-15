@@ -15,8 +15,10 @@ const Footer = (function () {
       <footer>
         <div class="footer-grid">
           <div>
-            <img src="${brand.logo}" alt="Alexander Insurance Group" style="height:44px;width:auto;object-fit:contain;">
-            <p class="footer-brand-name">${brand.name}</p>
+            <div class="footer-brand-row">
+              <img src="${brand.logo}" alt="${brand.name}" class="footer-brand-logo">
+              <span class="footer-brand-name">${brand.name}</span>
+            </div>
             <p class="footer-tagline">${footer.tagline}</p>
           </div>
 
