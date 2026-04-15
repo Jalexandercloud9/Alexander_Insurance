@@ -91,24 +91,6 @@ function HomePage() {
       </div>
     </section>
 
-    <!-- ABOUT PREVIEW -->
-    <section class="section">
-      <div class="container">
-        <div class="about-preview">
-          <div class="about-photo-wrap">
-            <img src="${brand.profilePhoto}" alt="${brand.agent}" class="about-photo">
-          </div>
-          <div>
-            <span class="section-label">${about.label}</span>
-            <h2 class="section-title">${about.title}</h2>
-            <p>${about.text}</p>
-            <blockquote class="about-quote">${about.quote}</blockquote>
-            <a href="${about.cta.hash}" class="btn btn-primary">${about.cta.text}</a>
-          </div>
-        </div>
-      </div>
-    </section>
-
     <!-- CONTACT FORM -->
     <section class="section section-alt" id="home-contact">
       <div class="container">
