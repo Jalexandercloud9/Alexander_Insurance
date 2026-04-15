@@ -191,7 +191,7 @@ h1, h2, h3, h4 {
   font-family: var(--font-heading);
   font-size: 1.15rem;
   font-weight: 700;
-  color: var(--white);
+  color: var(--navy);
   letter-spacing: -0.01em;
   white-space: nowrap;
   line-height: 1;
