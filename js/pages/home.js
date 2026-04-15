@@ -92,7 +92,7 @@ function HomePage() {
         <h2 class="section-title">See How IUL Can Change Your Future</h2>
         <p class="section-subtitle">Learn how Indexed Universal Life insurance builds tax-free wealth while protecting your family.</p>
         <div class="video-wrapper">
-          <video muted loop playsinline preload="metadata">
+          <video muted loop playsinline controls preload="metadata">
             <source src="${brand.video}" type="video/mp4">
             Your browser does not support the video tag.
           </video>
