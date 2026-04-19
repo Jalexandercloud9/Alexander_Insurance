@@ -6,12 +6,10 @@ function ServicesPage() {
   const services = SiteData.services;
 
   const sectionsHTML = services.map((s, i) => {
-    const reverse = i % 2 !== 0 ? ' reverse' : '';
-
     const benefitsHTML = s.benefits.map(b => `
-      <div class="focus-item">
-        <div class="focus-check"><i class="bi bi-check2"></i></div>
-        <p>${b}</p>
+      <div class="benefit-item">
+        <i class="bi bi-check-circle"></i>
+        <span>${b}</span>
       </div>
     `).join('');
 
@@ -19,33 +17,25 @@ function ServicesPage() {
       `<span class="carrier-badge">${c}</span>`
     ).join('');
 
-    const descHTML = s.fullDesc.map(p => `<p>${p}</p>`).join('');
-
     const videoHTML = s.id === 'life' ? `
-          <div class="video-wrapper" style="margin-top:24px;">
-            <video class="lazy-video" muted loop playsinline controls preload="metadata">
-              <source src="46BA8CD5-EB17-4287-B4F7-EECF3709E65B.mov" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
+      <div class="video-wrapper" style="margin-top:16px;">
+        <video class="lazy-video" muted loop playsinline controls preload="metadata">
+          <source src="46BA8CD5-EB17-4287-B4F7-EECF3709E65B.mov" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
     ` : '';
 
     return `
-      <div class="service-detail${reverse}" id="service-${s.id}">
-        <div>
-          <h2>${s.title}</h2>
-          ${descHTML}
-          <div class="carrier-list">${carriersHTML}</div>
-          ${videoHTML}
-          <div style="margin-top:24px;">
-            <a href="#schedule" class="btn btn-primary">Get a Free Quote</a>
-          </div>
+      <div class="service-section" id="service-${s.id}">
+        <h2>${s.title}</h2>
+        <p class="service-desc">${s.shortDesc}</p>
+        <div class="carrier-list">${carriersHTML}</div>
+        ${videoHTML}
+        <div class="benefits-grid">
+          ${benefitsHTML}
         </div>
-        <div>
-          <ul class="focus-list" style="list-style:none;">
-            ${benefitsHTML}
-          </ul>
-        </div>
+        <a href="#schedule" class="btn btn-primary">Get a Free Quote</a>
       </div>
     `;
   }).join('');
