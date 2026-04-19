@@ -795,8 +795,18 @@ h1, h2, h3, h4 {
   grid-template-columns: 1fr 1fr;
   gap: 40px;
   align-items: center;
-  padding: 36px 0;
-  border-bottom: 1px solid var(--border);
+  padding: 36px 28px;
+  border-radius: var(--r);
+  margin-bottom: 20px;
+}
+
+.service-detail:nth-child(odd) {
+  background: var(--bg);
+}
+
+.service-detail:nth-child(even) {
+  background: var(--white);
+  border: 1px solid var(--border);
 }
 
 .service-detail:last-of-type { border-bottom: none; }
