@@ -27,7 +27,13 @@ const App = (function () {
     if (subId) {
       const el = document.getElementById('service-' + subId);
       if (el) {
-        setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+        // Start at top so user sees the full page, then smooth scroll down
+        window.scrollTo({ top: 0, behavior: 'instant' });
+        setTimeout(() => {
+          const navHeight = 76;
+          const top = el.getBoundingClientRect().top + window.scrollY - navHeight;
+          window.scrollTo({ top: top, behavior: 'smooth' });
+        }, 100);
       } else {
         window.scrollTo({ top: 0, behavior: 'instant' });
       }
