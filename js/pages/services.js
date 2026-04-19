@@ -24,7 +24,7 @@ function ServicesPage() {
     const videoHTML = s.id === 'life' ? `
           <div class="video-wrapper" style="margin-top:24px;">
             <video class="lazy-video" muted loop playsinline controls preload="metadata">
-              <source src="IULvs529.mov" type="video/mp4">
+              <source src="46BA8CD5-EB17-4287-B4F7-EECF3709E65B.mov" type="video/mp4">
               Your browser does not support the video tag.
             </video>
           </div>
