@@ -21,6 +21,15 @@ function ServicesPage() {
 
     const descHTML = s.fullDesc.map(p => `<p>${p}</p>`).join('');
 
+    const videoHTML = s.id === 'life' ? `
+          <div class="video-wrapper" style="margin-top:24px;">
+            <video class="lazy-video" muted loop playsinline controls preload="metadata">
+              <source src="IULvs529.mov" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+    ` : '';
+
     return `
       <div class="service-detail${reverse}">
         <div>
@@ -30,7 +39,8 @@ function ServicesPage() {
           <h2>${s.title}</h2>
           ${descHTML}
           <div class="carrier-list">${carriersHTML}</div>
-          <div style="margin-top:28px;">
+          ${videoHTML}
+          <div style="margin-top:24px;">
             <a href="#schedule" class="btn btn-primary">Get a Free Quote</a>
           </div>
         </div>

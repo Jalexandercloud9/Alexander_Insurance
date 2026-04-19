@@ -53,8 +53,8 @@ const App = (function () {
     }
 
     // Video: only play when visible on screen
-    const video = document.querySelector('.video-wrapper video');
-    if (video) {
+    const videos = document.querySelectorAll('.video-wrapper video');
+    videos.forEach(video => {
       video.pause();
       if ('IntersectionObserver' in window) {
         const observer = new IntersectionObserver((entries) => {
@@ -68,10 +68,9 @@ const App = (function () {
         }, { threshold: 0.35 });
         observer.observe(video);
       } else {
-        // Fallback: play immediately
         video.play().catch(() => {});
       }
-    }
+    });
   }
 
   function init() {
