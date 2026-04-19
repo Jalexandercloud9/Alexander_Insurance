@@ -6,9 +6,9 @@ function ServicesPage() {
   const services = SiteData.services;
 
   const sectionsHTML = services.map((s, i) => {
-    const benefitsHTML = s.benefits.map(b => `
+    const benefitsHTML = s.benefits.map((b, idx) => `
       <div class="benefit-item">
-        <i class="bi bi-check-circle"></i>
+        <span class="benefit-num">${idx + 1}.</span>
         <span>${b}</span>
       </div>
     `).join('');
