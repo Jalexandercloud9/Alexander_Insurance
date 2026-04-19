@@ -31,7 +31,7 @@ function ServicesPage() {
     ` : '';
 
     return `
-      <div class="service-detail${reverse}">
+      <div class="service-detail${reverse}" id="service-${s.id}">
         <div>
           <h2>${s.title}</h2>
           ${descHTML}

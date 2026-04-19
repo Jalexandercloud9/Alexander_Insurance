@@ -11,7 +11,10 @@ const App = (function () {
 
   function navigate(hash) {
     const target = hash || '#home';
-    const page = routes[target];
+    const parts = target.split('/');
+    const baseRoute = parts[0];
+    const subId = parts[1] || null;
+    const page = routes[baseRoute];
     if (!page) return navigate('#home');
 
     const content = document.getElementById('page-content');
@@ -20,11 +23,20 @@ const App = (function () {
     // Re-render navbar to update active state
     Navbar.render();
 
-    // Scroll to top
-    window.scrollTo({ top: 0, behavior: 'instant' });
+    // Scroll to specific section or top
+    if (subId) {
+      const el = document.getElementById('service-' + subId);
+      if (el) {
+        setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' }), 50);
+      } else {
+        window.scrollTo({ top: 0, behavior: 'instant' });
+      }
+    } else {
+      window.scrollTo({ top: 0, behavior: 'instant' });
+    }
 
     // Init page-specific behavior
-    initPageScripts(target);
+    initPageScripts(baseRoute);
   }
 
   function initPageScripts(hash) {

@@ -30,7 +30,7 @@ function HomePage() {
 
   // Service list rows
   const cardsHTML = services.map(s => `
-    <a href="#services" class="service-row">
+    <a href="#services/${s.id}" class="service-row">
       <div class="service-row-icon"><i class="${s.icon}"></i></div>
       <span class="service-row-title">${s.title}</span>
       <i class="bi bi-arrow-right service-row-arrow"></i>
