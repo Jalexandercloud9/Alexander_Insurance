@@ -818,6 +818,16 @@ h1, h2, h3, h4 {
   font-size: 0.95rem;
 }
 
+.benefits-heading {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin-bottom: 6px;
+  margin-top: 16px;
+}
+
 .benefits-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;

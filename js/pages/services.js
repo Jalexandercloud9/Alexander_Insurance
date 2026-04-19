@@ -32,6 +32,7 @@ function ServicesPage() {
         <p class="service-desc">${s.shortDesc}</p>
         <div class="carrier-list">${carriersHTML}</div>
         ${videoHTML}
+        <p class="benefits-heading">Benefits</p>
         <div class="benefits-grid">
           ${benefitsHTML}
         </div>
