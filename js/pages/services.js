@@ -33,9 +33,6 @@ function ServicesPage() {
     return `
       <div class="service-detail${reverse}">
         <div>
-          <div class="service-detail-icon">
-            <i class="${s.icon}"></i>
-          </div>
           <h2>${s.title}</h2>
           ${descHTML}
           <div class="carrier-list">${carriersHTML}</div>
