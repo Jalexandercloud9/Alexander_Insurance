@@ -609,13 +609,12 @@ h1, h2, h3, h4 {
   overflow: hidden;
   background: #000;
   aspect-ratio: 16/9;
-  box-shadow: 0 24px 72px rgba(0,0,0,0.14);
 }
 
 .video-wrapper video {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   display: block;
 }
 
