@@ -41,7 +41,7 @@ const SiteData = {
   trustItems: [
     { icon: 'bi-shield-check', text: 'Licensed & Certified' },
     { icon: 'bi-people', text: 'Families Served Nationwide' },
-    { icon: 'bi-award', text: 'Top-Rated Independent Agent' },
+    { icon: 'bi-award', text: 'Top Independent Agents' },
     { icon: 'bi-clock-history', text: 'Personalized Service' },
   ],
 
