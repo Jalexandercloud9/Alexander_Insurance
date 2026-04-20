@@ -32,10 +32,8 @@ function ServicesPage() {
     } else if (s.video) {
       videoHTML = `
         <div class="video-wrapper" style="margin-top:16px;">
-          <iframe src="${s.video}" width="100%" height="100%" frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen title="${s.title} video"
-            style="min-height:320px;border:none;"></iframe>
+          <div class="lazy-yt" data-src="${s.video}?autoplay=1&mute=1&loop=1&playlist=${s.video.split('/').pop()}&controls=1&rel=0"
+            style="min-height:320px;width:100%;"></div>
         </div>
       `;
     }

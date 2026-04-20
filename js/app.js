@@ -89,6 +89,30 @@ const App = (function () {
         video.play().catch(() => {});
       }
     });
+
+    // YouTube iframes: load when visible (autoplay muted)
+    const ytPlaceholders = document.querySelectorAll('.lazy-yt');
+    ytPlaceholders.forEach(el => {
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting && !el.dataset.loaded) {
+              el.dataset.loaded = 'true';
+              const iframe = document.createElement('iframe');
+              iframe.src = el.dataset.src;
+              iframe.width = '100%';
+              iframe.height = '100%';
+              iframe.frameBorder = '0';
+              iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture';
+              iframe.allowFullscreen = true;
+              iframe.style.cssText = 'min-height:320px;border:none;';
+              el.replaceWith(iframe);
+            }
+          });
+        }, { threshold: 0.2 });
+        observer.observe(el);
+      }
+    });
   }
 
   function init() {
