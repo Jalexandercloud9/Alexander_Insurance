@@ -13,24 +13,38 @@ function ServicesPage() {
       </div>
     `).join('');
 
-    const carriersHTML = s.carriers.map(c =>
-      `<span class="carrier-badge">${c}</span>`
-    ).join('');
-
-    const videoHTML = s.id === 'life' ? `
-      <div class="video-wrapper" style="margin-top:16px;">
-        <video class="lazy-video" muted loop playsinline controls preload="metadata">
-          <source src="46BA8CD5-EB17-4287-B4F7-EECF3709E65B.mov" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-      </div>
+    const carriersHTML = s.carriers.length ? `
+      <div class="carrier-list">${s.carriers.map(c =>
+        '<span class="carrier-badge">' + c + '</span>'
+      ).join('')}</div>
     ` : '';
+
+    let videoHTML = '';
+    if (s.id === 'life') {
+      videoHTML = `
+        <div class="video-wrapper" style="margin-top:16px;">
+          <video class="lazy-video" muted loop playsinline controls preload="metadata">
+            <source src="46BA8CD5-EB17-4287-B4F7-EECF3709E65B.mov" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      `;
+    } else if (s.video) {
+      videoHTML = `
+        <div class="video-wrapper" style="margin-top:16px;">
+          <iframe src="${s.video}" width="100%" height="100%" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen title="${s.title} video"
+            style="min-height:320px;border:none;"></iframe>
+        </div>
+      `;
+    }
 
     return `
       <div class="service-section" id="service-${s.id}">
         <h2>${s.title}</h2>
         <p class="service-desc">${s.shortDesc}</p>
-        <div class="carrier-list">${carriersHTML}</div>
+        ${carriersHTML}
         ${videoHTML}
         <p class="benefits-heading">Benefits</p>
         <div class="benefits-grid">

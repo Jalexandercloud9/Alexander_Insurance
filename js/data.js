@@ -122,6 +122,38 @@ const SiteData = {
       ],
       carriers: ['Hartford', 'Travelers', 'CNA', 'AmTrust', 'Nationwide'],
     },
+    {
+      id: 'living-trust',
+      title: 'Living Trust',
+      icon: 'bi-shield-lock',
+      shortDesc: 'A revocable living trust is a flexible estate planning tool that lets you maintain full control of your assets during your lifetime — while ensuring they pass directly to your beneficiaries without the delays, costs, and public exposure of probate.',
+      fullDesc: [],
+      benefits: [
+        'Avoid probate — assets transfer directly to beneficiaries',
+        'Maintain full control of your assets during your lifetime',
+        'Privacy — trusts are not public record like wills',
+        'Reduce estate settlement costs and delays',
+        'Seamless management if you become incapacitated',
+      ],
+      carriers: [],
+      video: 'https://www.youtube.com/embed/6A265XemXT0',
+    },
+    {
+      id: 'will',
+      title: 'Will Creation',
+      icon: 'bi-file-earmark-text',
+      shortDesc: 'A last will and testament is a legal document that outlines how your money, property, and personal belongings will be handled in the future. It also allows you to name a guardian for your children and designate someone you trust to carry out your final wishes.',
+      fullDesc: [],
+      benefits: [
+        'Designate who inherits your assets and property',
+        'Name a guardian for your minor children',
+        'Choose an executor to manage your estate',
+        'Minimize family disputes with clear instructions',
+        'Ensure your wishes are legally documented and honored',
+      ],
+      carriers: [],
+      video: 'https://www.youtube.com/embed/vWNE_xCjs40',
+    },
   ],
 
   mission: {
