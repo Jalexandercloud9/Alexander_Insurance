@@ -267,12 +267,28 @@ h1, h2, h3, h4 {
    ============================================ */
 .hero {
   min-height: 0;
-  background: var(--navy) center top / cover no-repeat;
+  /* right-align so any gap on wide screens falls on the left where the
+     gradient is ~88 % opaque and invisible */
+  background: var(--navy) right top / cover no-repeat;
   display: flex;
   align-items: center;
   padding-top: 68px;
   position: relative;
   overflow: hidden;
+}
+
+/* Wide desktop: stop upscaling beyond the image's native 1536 px width.
+   The heavy left gradient hides the navy gap that appears on the left. */
+@media (min-width: 1537px) {
+  .hero { background-size: 1536px auto; }
+}
+
+/* Retina / HiDPI desktop (2× DPR, ≥ 769 px): display at half CSS width
+   so device pixels match the source pixels — no upscaling, sharp rendering.
+   Mobile already scales the image way down via cover, so no fix needed there. */
+@media (-webkit-min-device-pixel-ratio: 2) and (min-width: 769px),
+       (min-resolution: 192dpi) and (min-width: 769px) {
+  .hero { background-size: 768px auto; background-position: right top; }
 }
 
 /* Dark gradient overlay so text stays readable */
