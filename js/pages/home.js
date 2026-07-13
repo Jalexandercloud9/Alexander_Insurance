@@ -44,7 +44,8 @@ function HomePage() {
 
   return `
     <!-- HERO -->
-    <section class="hero" style="background-image: url('${brand.heroImage}');">
+    <section class="hero">
+      <img src="${brand.heroImage}" alt="" class="hero-bg" fetchpriority="high" decoding="async">
       <div class="hero-container">
         <div class="hero-inner">
           <h1 class="hero-title">${hero.title}</h1>
