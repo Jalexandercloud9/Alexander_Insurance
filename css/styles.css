@@ -285,7 +285,7 @@ h1, h2, h3, h4 {
   z-index: 0;
 }
 
-/* Dark gradient overlay so text stays readable */
+/* Dark gradient overlay so text stays readable — must sit ABOVE the img */
 .hero::before {
   content: '';
   position: absolute;
@@ -296,12 +296,16 @@ h1, h2, h3, h4 {
     rgba(27,58,107,0.65) 55%,
     rgba(27,58,107,0.35) 100%
   );
-  z-index: 0;
+  z-index: 1;
+}
+
+.hero-container {
+  z-index: 2 !important;
 }
 
 .hero-inner {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   max-width: 660px;
   margin-left: 0;
   padding: 24px 28px 24px;
@@ -317,7 +321,6 @@ h1, h2, h3, h4 {
   margin: 0 auto;
   padding: 0 28px;
   position: relative;
-  z-index: 1;
   display: flex;
   align-items: center;
 }
